@@ -16,34 +16,43 @@ int main()
         int l, r, x, ans = 0;
         cin >> l >> r >> x;
 
+        int mid = (r-l+1)/2;
 
-        while (l <= r) 
+        if(ar[mid-1] == x)
         {
-            int m = (1 + r - l)/ 2;
-
-            if (ar[m] == x)
+            for(int i = mid-2; i>=0; i--)
             {
-                ans = r-m+1;
-                break;
+                if(ar[i] < x)
+                    ans = r-(i+1);
+
             }
-
-            else if (ar[m] > x)
+        }
+            
+        
+        else if(ar[mid-1] > x)
+        {
+            for(int i = l-1; i<=mid-1; i++)
             {
-                if(ar[m-1] < x)
+                if(ar[i] >= x)
                 {
-                    ans = r-m+1;
+                    ans = r-i;
                     break;
                 }
-
-                else
-                    r = m - 1;
             }
-                
-
-            else
-                l = m + 1;
         }
-    
+
+        else
+        {
+            for(int i = mid; i<=r-1; i++)
+            {
+                if(ar[i] >= x)
+                {
+                    ans = r-i;
+                    break;
+                }
+            }
+        }
+
         cout << ans << endl;
     }
  
