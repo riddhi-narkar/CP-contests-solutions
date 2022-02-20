@@ -1,0 +1,24 @@
+Your friend, Jason, wants to train for a 10K race and is struggling to maintain a consistent training schedule. You want to help your friend 
+reach his goal and offer to create a training plan for him.
+
+Jason gets bored easily when running alone. Fortunately, you have found a running team in your area that arranges daily trainings. 
+The workouts have different paces, durations, routes, and people joining. Jason has graded each day's training based on his preferences, 
+i.e., he has assigned an integer grade to each day's training. 
+You would like to maximize the chances of your friend finishing the training plan by adjusting it to his preferences as much as possible.
+
+More specifically, Jason's training plan will span M consecutive periods. 
+Each period has X days, and the 1st day of each period follows the Xth day of the previous period. 
+For each period, you want to select exactly Y trainings out of the X available. 
+You must pick these X⋅Y trainings in a way that maximizes the sum of their grades. 
+However, since you don't want your friend to get injured, you have to be careful and make sure you 
+do not pick more than K consecutive trainings anywhere in the whole training plan.
+
+Standard input
+The first line contains a single integer T, the number of test cases.
+
+Each test case starts with a line containing four integers M, X, Y and K. Then M lines follow, each containing X integers. 
+The ith line give the grades Jason assigned to each day's training in the ith period.
+
+Standard output
+For each test case, output a single line containing a single integer: the sum of the grades of the 
+best training plan you can create for your friend. If no training plan can be created under the given constraints, print IMPOSSIBLE.
