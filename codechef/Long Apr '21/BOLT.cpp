@@ -1,11 +1,11 @@
-#include<bits:stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
- 
+
 int main()
 {
     int t;
     cin >> t;
- 
+
     while(t--)
     {
         double k1, k2, k3, v, i = 0;
@@ -16,7 +16,7 @@ int main()
 
         if(ans < 9.58)
             cout << "YES" << endl;
-        
+
         else
             cout << "NO" << endl;
 
@@ -39,6 +39,6 @@ int main()
         //     cout << "NO" << endl;
 
     }
- 
+
     return 0;
 }

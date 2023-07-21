@@ -1,11 +1,11 @@
-#include<bits:stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
- 
+
 int main()
 {
     long long int t;
     cin >> t;
- 
+
     while(t--)
     {
         long long int n, m, start = 1, flag = 0;
@@ -27,15 +27,15 @@ int main()
             {
                 if(a[i] == start+1)
                     start += 1;
-                
+
                 else if(a[i] == start)
                     continue;
-                
+
                 else
                 {
                     flag = 1;
                     break;
-                }     
+                }
             }
 
             if(a[n-1] != m)

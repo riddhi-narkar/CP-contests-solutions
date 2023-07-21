@@ -1,4 +1,4 @@
-#include<bits:stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -15,16 +15,16 @@ int main()
         cin >> n >> m;
 
         for(int i = 0; i<n; i++)
-        {   
-            int x ; 
+        {
+            int x ;
             cin >> x;
             nsum += x;
             a.push_back(x);
         }
 
         for(int i = 0; i<m; i++)
-        {   
-            int x ; 
+        {
+            int x ;
             cin >> x;
             msum += x;
             b.push_back(x);
@@ -33,11 +33,11 @@ int main()
         if(a == b)
             cout << -1 << endl;
 
-        else 
+        else
         {
             if(nsum > msum)
                 cout << 0 << endl;
-        
+
             else
             {
                 sort(a.begin(), a.end());
@@ -45,27 +45,27 @@ int main()
 
                 for(int i = 1; i <= min(n, m); i++)
                 {
-                    
+
                     int l = a[p];
                     int g = b[p];
-                    
+
                     nsum = (nsum - l + g);
-                    msum = (msum + l - g); 
+                    msum = (msum + l - g);
 
                     count += 1;
                     p += 1;
-                    
+
                     if(nsum > msum)
                     {
                         cout << count << endl;
                         break;
                     }
                 }
-                
+
                 if(nsum < msum)
                 cout << -1 << endl;
             }
-            
+
         }
     }
 

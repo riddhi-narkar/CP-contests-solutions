@@ -1,4 +1,4 @@
-#include<bits:stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -56,14 +56,14 @@ int main()
 //         {
 //             if(arr[n-1] == arr[i])
 //                 continue;
-            
+
 //             else
 //             {
 //                 itr = arr[n-1]*arr[i] + arr[n-1] - arr[i];
 //                 break;
 //             }
 //         }
-      
+
 //         cout << itr << endl;
 //     }
 //     return 0;

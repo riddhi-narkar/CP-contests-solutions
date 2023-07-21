@@ -1,27 +1,27 @@
 // { Driver Code Starts
 //Initial Template for C++
 
-#include <bits_stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 
  // } Driver Code Ends
 //User function Template for C++
 
-class Solution 
+class Solution
 {
   public:
-  
-     string solve(long long N,long long A[]) 
+
+     string solve(long long N,long long A[])
     {
         bool flag = false;
         long long sum = 0;
         for(long long i = 0; i<N; i++)
             sum += A[i];
-        
+
         if(sum == 0)
             return "YES";
-        
+
         else if(sum % 2 != 0)
             return "NO";
         else
@@ -32,10 +32,10 @@ class Solution
                 if(sum1 == A[i])
                     return "YES";
             }
-            
+
             return "NO";
         }
-        
+
     }
 };
 

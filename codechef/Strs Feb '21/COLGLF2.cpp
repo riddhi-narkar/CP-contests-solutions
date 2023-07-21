@@ -1,4 +1,4 @@
-#include<bits:stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -15,7 +15,7 @@ int main()
 
         for(int i = 0; i<s; i++)
             cin >> q[i];
-        
+
         for(int i = 0; i<s; i++)
         {
             int e;

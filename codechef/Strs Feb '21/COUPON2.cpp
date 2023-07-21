@@ -1,4 +1,4 @@
-#include<bits:stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -12,14 +12,14 @@ int main()
         cin >> d >> c;
 
         for (int i= 0; i<3; i++)
-        { 
+        {
             int a;
             cin >> a;
             A += a;
         }
 
         for (int i= 0; i<3; i++)
-        { 
+        {
             int b;
             cin >> b;
             B += b;
@@ -29,7 +29,7 @@ int main()
 
         if(A < 150 && B < 150)
             ct = INT_MAX;
-        
+
         else if((A >= 150 && B < 150) || (B >= 150 && A < 150))
             ct = A + B + d + c;
 

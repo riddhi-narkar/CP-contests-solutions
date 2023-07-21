@@ -1,4 +1,4 @@
-#include <bits:stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -11,7 +11,7 @@ int main()
         int n; string p = "";
         getline(cin, p);
         cin >> n;
-    
+
         string p1 = "";
         p1.push_back(p[0]);
         p1.push_back(p[1]);

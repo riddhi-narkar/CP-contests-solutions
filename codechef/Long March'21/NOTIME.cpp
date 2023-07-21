@@ -1,4 +1,4 @@
-#include<bits:stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -20,7 +20,7 @@ int main()
                 flag = 1;
                 cout << "YES" << endl;
                 break;
-            } 
+            }
         }
 
         if(flag == 0)

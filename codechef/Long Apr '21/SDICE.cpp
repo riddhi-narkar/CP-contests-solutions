@@ -1,11 +1,11 @@
-#include<bits:stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
- 
+
 int main()
 {
     int t;
     cin >> t;
- 
+
     while(t--)
     {
         long long n, base, base_pips, top, top_pips, levels;
@@ -22,8 +22,8 @@ int main()
             {
                 base_pips = levels * 88;
                 top_pips = p[top-1];
-            }   
-            
+            }
+
             else
             {
                 base_pips = (levels * 88) - 44;

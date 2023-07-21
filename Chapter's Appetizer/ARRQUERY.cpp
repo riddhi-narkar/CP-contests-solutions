@@ -1,6 +1,6 @@
-#include<bits:stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
- 
+
 int main()
 {
     int n, q;
@@ -10,7 +10,7 @@ int main()
 
     for(int i = 0; i<n; i++)
         cin >> ar[i];
- 
+
     while(q--)
     {
         int l, r, x, ans = 0;
@@ -27,8 +27,8 @@ int main()
 
             }
         }
-            
-        
+
+
         else if(ar[mid-1] > x)
         {
             for(int i = l-1; i<=mid-1; i++)
@@ -55,6 +55,6 @@ int main()
 
         cout << ans << endl;
     }
- 
+
     return 0;
 }

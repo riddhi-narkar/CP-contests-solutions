@@ -1,11 +1,11 @@
-#include<bits:stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
- 
+
 int main()
 {
     int t;
     cin >> t;
- 
+
     while(t--)
     {
         int n;
@@ -15,7 +15,7 @@ int main()
 
         for(int i = 0; i<n; i++)
             cin >> g[i];
-        
+
         int rows = *max_element(g, g+n);
         int m[rows][n];
 
@@ -23,12 +23,12 @@ int main()
         {
             for(int j = 0; j<n; i++)
             {
-                
+
             }
         }
 
 
     }
- 
+
     return 0;
 }

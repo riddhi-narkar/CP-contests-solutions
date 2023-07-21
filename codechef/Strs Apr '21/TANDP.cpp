@@ -1,11 +1,11 @@
-#include<bits:stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
- 
+
 int main()
 {
     int t;
     cin >> t;
- 
+
     while(t--)
     {
         int n, m, x, y, a, b;
@@ -16,11 +16,11 @@ int main()
         dp = (n-a) + (m - (b + (n-a)));
 
         if(dp >= dt)
-            cout << "YES" << endl; 
+            cout << "YES" << endl;
 
         else
             cout << "NO" << endl;
     }
- 
+
     return 0;
 }

@@ -1,4 +1,4 @@
-#include<bits:stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {   vector <pair<char,int> > v={{'T',6},{'K',15},{'M',11},{'S',12},{'C',5},{'D',15},{'c',8},{'v',5},{'T',8},{'T',9},{'w',7},{'W',17},{'T',18},{'A',6}};
@@ -18,10 +18,10 @@ int main()
 // M11
 // S12
 // C5
-// D15 
+// D15
 // c8
 // v5
-// T8 
+// T8
 // T9
 // w7
 // W17

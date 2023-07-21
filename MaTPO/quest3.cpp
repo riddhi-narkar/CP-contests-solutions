@@ -1,7 +1,7 @@
 // { Driver Code Starts
 //Initial Template for C++
 
-#include <bits_stdc++.h>
+#include <bits/stdc++.h>
 using namespace std ;
 
  // } Driver Code Ends
@@ -13,7 +13,7 @@ class Solution {
     {
         if(n == 1)
             return 1;
-            
+
         sort(ar, ar + n);
         if(ar[n-1] > ar[n-2])
             return 1;
