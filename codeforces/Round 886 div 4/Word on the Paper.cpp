@@ -11,7 +11,23 @@ int main()
 
     while(t--)
     {
+        char in;
 
+        for (int i = 0; i < 8; i++)
+        {
+            for (int j = 0; j < 8; j++)
+            {
+                cin >> in;
+
+                if(int(in) == 46)
+                    continue;
+
+                else
+                    cout << in;
+            }
+        }
+
+        cout << endl;
     }
 
     return 0;
